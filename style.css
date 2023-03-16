@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+    color: white;
+}
+:root{
+    --cor-fundo : rgb(35, 35, 43);
+    --cor-verde : rgb(72, 223, 72);
+}
+body{
+    background-color: black;
+}
+
