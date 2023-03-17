@@ -5,10 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streaming</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    
 </head>
 <body>
-    
+<!-- parte do topo, navegação do usuário -->
+<nav>
+    <img src="" alt="" id="logo">
+    <img id='icone-de-usuário'>
+</nav>
+<!-- parte em que ficara o a descrição da serie/filme recomendado -->
+<header> 
+    <h1 id="titulo">La casa de papel</h1>
+    <button type="button" class="btn btn-outline-secondary">Assistir</button>
+    <button type="button" class="btn btn-outline-secondary">+ Adicionar a lista</button>
+    <div id="descricao">
+        Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. 
+        Seu líder manipula a polícia para realizar um plano.
+         Será o maior roubo da história, ou uma missão em vão?
+    </div>
+</header>
+
+<!-- parte em que ficaram os menus de navegação -->
+<main>
+    <h3>Originais Codeflix</h3>
+    <section>
+        
+        <div class="slider" id="slider1">
+            <div class="teste"><img src="./posters/img.jpg" alt=""></div>
+            <div class="teste"><img src="./posters/img21.jpg" alt=""></div>
+            <div class="teste"> <img src="./posters/img15.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img2.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img3.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img4.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img5.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img6.webp" alt=""> </div>
+            <div class="teste"> <img src="./posters/img7.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img8.jfif" alt=""> </div>
+            <div class="teste"> <img src="./posters/img9.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img10.jpg" alt=""> </div>
+        </div>
+        <button type="button" id="volta" class="btn btn-outline-secondary absolute volta volta1"><</button>
+        <button type="button" id="vai" class="btn btn-outline-secondary absolute vai vai1">></button>
+    </section>
+    <h3>Ação</h3>
+    <section>
+        
+        <div class="slider" id="slider2">
+            <div class="teste"> <img src="./posters/img11.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img15.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img16.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img17.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img18.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img19.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img20.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img21.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img2.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img7.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img17.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img4.jpg" alt=""> </div>
+        </div>
+        <button type="button" id="volta" class="btn btn-outline-secondary absolute volta volta2"><</button>
+        <button type="button" id="vai" class="btn btn-outline-secondary absolute vai vai2">></button>
+    </section>
+    <h3>Romance</h3>
+    <section>
+        
+        <div class="slider" id="slider3">
+            <div class="teste"> <img src="./posters/img2.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img16.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img15.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img18.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img21.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img19.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img20.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img5.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img21.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img7.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img17.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img4.jpg" alt=""> </div>
+        </div>
+        <button type="button" id="volta" class="btn btn-outline-secondary absolute volta volta3"><</button>
+        <button type="button" id="vai" class="btn btn-outline-secondary absolute vai vai3">></button>
+    </section>
+    <h3>Terror</h3>
+    <section>
+        
+        <div class="slider" id="slider4">
+            <div class="teste"> <img src="./posters/img.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img18.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img16.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img3.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img18.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img15.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img2.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img21.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img11.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img7.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img17.jpg" alt=""> </div>
+            <div class="teste"> <img src="./posters/img4.jpg" alt=""> </div>
+        </div>
+        <button type="button" id="volta" class="btn btn-outline-secondary absolute volta volta4"><</button>
+        <button type="button" id="vai" class="btn btn-outline-secondary absolute vai vai4">></button>
+    </section>
+
+</main>
+
+<footer>
+
+</footer>
 </body>
 </html>
