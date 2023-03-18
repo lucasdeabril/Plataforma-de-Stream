@@ -8,77 +8,97 @@ let voltas1 = 0
 let voltas2 = 0
 let voltas3 = 0
 let voltas4 = 0
-let  limit = 0
+let  limit1 = 6
+let  limit2 = 6
+let  limit3 = 6
+let  limit4 = 6
 
 // funções
-const swipefront1 = () => {
-    if (limit>=0&&limit<=6){
+// faz as fotos irem para a esquerda
+const swipefront1 = () => { 
+    if (limit1<12){
      console.log('oi')
     voltas1 -= 225 
     carrossel.style.transform= `translateX(${voltas1}px)`  
-    limit -- 
+    limit1 ++
     console.log(limit)
     }else{
         console.log('vish')
-        limit++
+        
     }
-    
-          
 }
 const swipeback1 = () => {
-    if (limit>=0&&limit<=6){
+    if (limit1>6){
      console.log('oi')
     voltas1 += 225
     carrossel.style.transform= `translateX(${voltas1}px)`
-    limit ++
+    limit1 --
     console.log(limit) 
     }else{
         console.log('vish')
-        limit--
+        
     }
     
 }
 
 const swipefront2 = () => {
-    
-    console.log('oi')
+    if (limit2<12){
+       console.log('oi')
     voltas2 -= 225 
-    carrosse2.style.transform= `translateX(${voltas2}px)`
+    carrosse2.style.transform= `translateX(${voltas2}px)` 
+    limit2 ++
+    }
+    
           
 }
 const swipeback2 = () => {
-    
-    console.log('oi')
+    if (limit2>6){
+        console.log('oi')
     voltas2 += 225
     carrosse2.style.transform= `translateX(${voltas2}px)`
+    limit2 --
+    }
+    
     
 }
 const swipefront3 = () => {
-    
-    console.log('oi')
+    if (limit3<12){
+       console.log('oi')
     voltas3 -= 225 
-    carrosse3.style.transform= `translateX(${voltas3}px)`
+    carrosse3.style.transform= `translateX(${voltas3}px)` 
+    limit3++
+    }
+    
           
 }
 const swipeback3 = () => {
-    
-    console.log('oi')
+    if (limit3>6){
+       console.log('oi')
     voltas3 += 225
-    carrosse3.style.transform= `translateX(${voltas3}px)`
+    carrosse3.style.transform= `translateX(${voltas3}px)` 
+    limit3 --
+    }
+    
     
 }
 const swipefront4 = () => {
-    
-    console.log('oi')
+    if (limit4<12){
+        console.log('oi')
     voltas4 -= 225 
     carrosse4.style.transform= `translateX(${voltas4}px)`
+    limit4 ++
+    }
+    
           
 }
 const swipeback4 = () => {
-    
-    console.log('oi')
+    if (limit4>6){
+     console.log('oi')
     voltas4 += 225
-    carrosse4.style.transform= `translateX(${voltas4}px)`
+    carrosse4.style.transform= `translateX(${voltas4}px)` 
+    limit4  --
+    }
+    
     
 }
 
@@ -122,4 +142,3 @@ addEventListener('click', (e) => {
 
     }
 })
-
