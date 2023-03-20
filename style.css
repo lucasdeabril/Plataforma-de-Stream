@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
 
-    color: white;
+    color: rgb(255, 255, 255);
     transition: .3s;
 }
 :root{
@@ -14,37 +14,91 @@ body{
     /* max-width: 100px; */
 }
 nav{
-    /* background-color: gray; */
+    background-color: rgb(0, 0, 0);
     width: 100%;
-    height: 40px;
+    height: fit-content;
+   
+    
+}
+nav img{
+    width: 100px;
+    margin-left: 1rem;
+}
+#icone-de-usuário{
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+
+}
+.perfil{
+    transform: translate(110px,70px);
+    float: right;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    width: 200px;
+    height: 100px;
+    border-radius: 5%;
+    background-color: white;
+}
+
+.hidden{
+    display: none;
+}
+.perfil div{
+    color: black;
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    justify-self: center;
+    padding-left: 5%;
+    border-radius: 5%;
+}
+.perfil .inscreva-se{
+    background-color: red;
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    justify-self: center;
+    padding-left: 5%;
+    border-radius: 5%;
+    cursor: pointer;
 }
 
 header{
     
     width: 100%;
-    height: 17rem;
+    height: 20rem;
     background-image: url(./la-casa-papel.png);
+    
     background-size: cover;
+}
+header h1,button,div{
+    margin-left: 20px;
 }
 header h1{
     margin-bottom: 20px;
 }
 #descricao{
     display: flex;
-    width: 43%;
+    width: 40%;
     justify-content: justify;
     margin-top: 20px;
 
 }
-
+/* Parte do corpo do site */
+h3{
+    margin-left: 1rem;
+}
 section{
-    /* background-color: gray; */
+   
     width: 100%;
     height: 290px;
     display: flex;
     margin-bottom: 40px;
     overflow: hidden;
 }
+
 .teste{
     width: 220px;
     height: 290px;
@@ -79,4 +133,14 @@ section .btn{
 }
 section .btn-outline-secondary{
     background-color: rgba(63, 63, 63, 0.24);
+}
+
+@media screen and (max-width: 400px){
+    #descricao{
+        width: 90%;
+    }
+    .perfil{
+        position: absolute;
+        transform: translate(150px,0px);
+    }
 }
