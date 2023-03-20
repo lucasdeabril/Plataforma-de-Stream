@@ -4,6 +4,9 @@ const carrossel = document.querySelector('#slider1')
 const carrosse2 = document.querySelector('#slider2')
 const carrosse3 = document.querySelector('#slider3')
 const carrosse4 = document.querySelector('#slider4')
+const perfil = document.querySelector('.perfil')
+const perfilbtn = document.querySelector('.inscreva-se')
+
 let voltas1 = 0
 let voltas2 = 0
 let voltas3 = 0
@@ -140,5 +143,34 @@ addEventListener('click', (e) => {
     if(targetEl.classList.contains('volta4')){
         swipeback4()
 
+    }
+    // perfil de usuário
+
+    if(targetEl.classList.contains('icone')){
+        perfil.classList.toggle('hidden')
+    }
+
+})
+
+addEventListener('mouseover', (e)=>{
+    let targetEl = e.target;
+    if (targetEl.classList.contains('thumb')){
+    targetEl.style.scale = '1.15'
+    
+    }
+    if(targetEl.classList.contains('inscreva-se')){
+        perfilbtn.innerHTML=('Mas não hoje')
+    }
+    
+    
+})
+addEventListener('mouseout', (e)=>{
+    let targetEl = e.target;
+    if (targetEl.classList.contains('thumb')){
+    targetEl.style.scale = '1'
+    
+    }
+    if(targetEl.classList.contains('inscreva-se')){
+        perfilbtn.innerHTML=('inscreva-se')
     }
 })
